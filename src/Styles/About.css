@@ -1,0 +1,215 @@
+.about-container {
+  padding: 20px;
+  animation: fadeInUp 1s ease;
+  background-size: cover;
+  background-position: center;
+  height: 135vh;
+  justify-content: center;
+
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #101010;
+  width: 80%; 
+  font-size: 24px;
+}
+.sub-aboutcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: #292828;
+  width: 50%;
+  text-align: center;
+  margin-left: 23%;
+  
+}
+p.about-para{
+  font-size: 20px;
+  width: 100%;
+}
+
+.skill-card {
+  width: 230px;
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f0f0f0;
+  transition: transform 0.5s;
+  background-size: cover;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(173, 216, 230, 0.8);
+  margin-bottom: 20px;
+}
+
+.skill-card:hover {
+  transform: scale(1.15);
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@media (max-width: 1155px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1690321607729-bce901c77324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDE2fHx8ZW58MHx8fHx8&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    width: 80%; 
+    font-size: 24px;
+  }
+  .sub-aboutcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-left: 15%;
+    width: 70%;
+    
+  }
+  .skill-card {
+    width: 230px;
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f0f0f0;
+    transition: transform 0.5s;
+    background-size: cover;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(117, 252, 240, 0.8);
+    margin-bottom: 20px;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1690321607729-bce901c77324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDE2fHx8ZW58MHx8fHx8&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+  
+  .skill-card {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f0f0f0;
+    transition: transform 0.3s;
+    background-size: cover;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(173, 216, 230, 0.8);
+    margin-bottom: 20px;
+  
+}
+p.about-para{
+  font-size: 20px;
+  width: 100%;
+}
+
+}
+
+
+@media (max-width: 600px) {
+  .about-container {
+      padding: 10px;
+  }
+  div.sub-aboutcontainer{
+    margin-left: 20%;
+    
+  }
+
+
+p.about-para{
+  font-size: 20px;
+  width: 150%;
+}
+
+  .skill-card {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f0f0f0;
+    transition: transform 0.3s;
+    background-size: cover;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(13, 216, 230, 0.8);
+    margin-bottom: 20px;
+  
+}
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+  }
+}
+@media (max-width: 597px) {
+  .about-container {
+    padding: 10px;
+}
+div.sub-aboutcontainer{
+  margin-left: 10%;
+  
+}
+
+
+p.about-para{
+font-size: 20px;
+width: 100%;
+}
+
+.skill-card {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f0f0f0;
+  transition: transform 0.3s;
+  background-size: cover;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(13, 216, 230, 0.8);
+  margin-bottom: 20px;
+
+}
+}

@@ -1,0 +1,206 @@
+/* Home.css */
+.home-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  position: relative;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/009/392/527/original/web-page-on-a-laptop-screen-a-mobile-phone-is-lying-a-cloud-a-cloud-service-or-an-application-modern-technological-background-isometry-conceptual-banner-of-web-technologies-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home-container::before,
+.home-container::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
+}
+
+.home-container::before {
+  top: 0;
+  left: 0;
+}
+
+.home-container::after {
+  bottom: 0;
+  right: 0;
+}
+
+.home-about-container{
+  color:black;
+  text-align: center;
+  justify-content: center;
+}
+.home-skills-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: rgb(131, 20, 204);
+  width: 50%;
+  padding: 25px;
+  border-radius: 25px;
+
+}
+p.home-about-para{
+  font-size: 18px;
+  width: 90%;
+  margin-left: 0;
+}
+
+.text-container {
+  animation: none;
+  text-align: right; 
+  margin-right: 10%;
+}
+
+p.name {
+  font-weight: bold;
+  color: white;
+  font-size: 60px;
+}
+
+.slogan {
+  font-size: 22px;
+  color: #fab906;
+  margin-top: 10px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+.coding-skills{
+  margin-left: 60%;
+  font-size: 20px;
+  line-break: auto;
+  justify-content: left;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-image {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.name {
+  font-size: 5em;
+}
+
+.slogan {
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1690321607729-bce901c77324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDE2fHx8ZW58MHx8fHx8&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+  .home-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: rgb(131, 20, 204);
+    width:90%;
+    padding: 25px;
+    border-radius: 25px;
+    
+  }
+
+  .profile-image {
+    margin: 0 auto 20px;
+  }
+
+  .text-container {
+    animation: none;
+  }
+  p.name {
+    font-weight: bold;
+    color: white;
+    margin-top: 20px; 
+    font-size: 60px;
+  }
+  
+  .slogan {
+    font-size: 22px;
+    color: #a37907;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  p.coding-skills{
+    font-size: 18px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  
+}
+@media (max-width: 600px) {
+  .home-about-container {
+      padding: 10px;
+  }
+  div.home-sub-aboutcontainer{
+    margin-left: 20%;
+    justify-content: center;
+    
+  }
+
+
+p.home-about-para{
+  font-size: 20px;
+  width: 90%;
+  margin-left: 0;
+}
+
+  .home-skill-card {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f0f0f0;
+    transition: transform 0.3s;
+    background-size: cover;
+    height: 100%;
+    box-shadow: 5px 15px 15px rgba(172, 52, 252, 1.0);
+    margin-bottom: 20px;
+  
+}
+  
+  .home-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    /* width: 80%; */
+    
+  }
+}
+@media (max-width: 360px) {
+  .home-skills-container {
+    
+
+  }
+}
+

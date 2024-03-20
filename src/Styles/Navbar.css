@@ -1,0 +1,42 @@
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .navbar-container {
+    animation: slideInFromTop 0.8s ease-in-out;
+  }
+  .navbar-container {
+    padding: 10px 0; 
+  }
+  
+  @media (max-width: 600px) {
+    .navbar-container {
+      padding: 8px 0; 
+    }
+  
+    .profile-image {
+      margin-right: 10px; 
+    }
+  }
+
+  @media (min-width: 769px) {
+    .navbar-container a {
+      color: #a37907;
+      text-decoration: none;
+      padding: 8px 12px;
+      transition: background 1s, color 1s; 
+      border-radius: 10225px;
+    }
+  
+    .navbar-container a:hover {
+      background: linear-gradient(to right, gold, orange);
+      color: white;
+    }
+  }
