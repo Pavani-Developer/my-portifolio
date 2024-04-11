@@ -42,11 +42,15 @@ const Home = () => {
       
       </div>
     </div>
-    <hr/>
-         <About/>
-         <hr/>
+        <div  className='about-wrapper'>
+        <About/>
+        </div>
+         
+         
+         
          <Projects/>
-         <hr/>
+         <h3 style={{ textAlign:"center", fontWeight:'bold' }}>Contact</h3>
+         <hr style={{ width: '80%', maxWidth: '1000px', margin: 'auto' }} /><br></br>
          <Contact/>
     </>
   );

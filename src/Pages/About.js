@@ -3,13 +3,15 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import '../Styles/About.css'; 
+import Git from './Git';
+
 
 const About = () => {
   const skills = [
     { name: '', backgroundImage: 'url(https://media.licdn.com/dms/image/D5612AQGxN33vY4O7FA/article-cover_image-shrink_720_1280/0/1690101139624?e=2147483647&v=beta&t=rxl1ZfMm4Ihg6HLEAlASEGwNh5Llgp--KtJ4lpwPGk0)' },
     { name: '', backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhln4-ygosRcYC8XLmLPuh_bxZXFH8xpD48w&usqp=CAU)' },
     { name: '', backgroundImage: 'url(https://miro.medium.com/v2/resize:fit:2000/1*qF8LfAwUhl57g9T0BVvVdg.jpeg)' },
-    { name: '', backgroundImage: 'url(https://res.cloudinary.com/practicaldev/image/fetch/s--4BjMqsdN--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4anecy5mdl4pho8w7519.jpg)' },
+
     { name: '', backgroundImage: 'url(https://cdn.hashnode.com/res/hashnode/image/upload/v1616249961785/F2de7vPiW.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp)' },
     { name: '', backgroundImage: 'url(https://img-c.udemycdn.com/course/750x422/5637694_579d_8.jpg)' },
     { name: '', backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ev6Tsx1p8yFeeg8P9cuXMcYF6QIaDoMxyA&usqp=CAU)' },
@@ -57,6 +59,7 @@ const About = () => {
           Thank you for visiting my portfolio! Feel free to explore my projects, and don't hesitate to reach out if you have any inquiries or collaboration opportunities.
         </p>
       </div>
+      
     </div>
   );
 }
