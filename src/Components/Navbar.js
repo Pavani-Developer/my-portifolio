@@ -18,10 +18,10 @@ import { Link } from 'react-router-dom';
 import '../Styles/Navbar.css'
 
 const pages = [
-  { label: 'Home', icon: <HomeIcon style={{ color: '#a37907' }} />, path: '/' },
-  { label: 'About', icon: <InfoIcon style={{ color: '#a37907' }} />, path: '/about' },
-  { label: 'Projects', icon: <DescriptionIcon style={{ color: '#a37907' }} />, path: '/projects' }, 
-  { label: 'ReachOut', icon: <MailOutlineIcon style={{ color: '#a37907' }} />, path: '/reachout' },
+  { label: 'Home', icon: <HomeIcon style={{ color: '#a37907' }} />, path: '/' ,pagepath:'#'},
+  { label: 'About', icon: <InfoIcon style={{ color: '#a37907' }} />, path: '/about' ,pagepath:'#about'},
+  { label: 'Projects', icon: <DescriptionIcon style={{ color: '#a37907' }} />, path: '/projects',pagepath:'#projects' }, 
+  { label: 'ReachOut', icon: <MailOutlineIcon style={{ color: '#a37907' }} />, path: '/reachout',pagepath:'#reachout' },
 ];
 
 const LogoImage = (

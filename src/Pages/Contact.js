@@ -54,7 +54,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Container component="main" maxWidth="sm" style={{ textAlign: 'center' }}>
+    <Container component="main" maxWidth="sm" style={{ textAlign: 'center' }} id='#reachout'>
       <Paper elevation={3} style={{ padding: '20px', marginTop: '20px' }}>
         <>
           <Typography variant="h5">Get In Touch</Typography>

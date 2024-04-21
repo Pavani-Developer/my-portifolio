@@ -6,7 +6,7 @@
   justify-content: flex-end;
   height: 100vh;
   position: relative;
-  background-image: url('https://static.vecteezy.com/system/resources/previews/009/392/527/original/web-page-on-a-laptop-screen-a-mobile-phone-is-lying-a-cloud-a-cloud-service-or-an-application-modern-technological-background-isometry-conceptual-banner-of-web-technologies-vector.jpg');
+  background-image: url('../Components/Assets/Home.jpg');
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -119,7 +119,7 @@ p.name {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    background-image: url('https://images.unsplash.com/photo-1690321607729-bce901c77324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDE2fHx8ZW58MHx8fHx8&w=1000&q=80');
+    background-image: url('../Components/Assets/mobileview.jpeg');
     background-size: cover;
     background-position: center;
   }

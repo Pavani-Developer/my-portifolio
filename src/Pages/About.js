@@ -3,7 +3,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import '../Styles/About.css'; 
-import Git from './Git';
 
 
 const About = () => {
@@ -30,7 +29,7 @@ const About = () => {
 
 
   return (
-    <div className="about-container">
+    <div className="about-container"  id='#about'>
       <div className='sub-aboutcontainer' >
         <h1>About Me</h1>
         <p className='about-para'>

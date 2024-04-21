@@ -104,7 +104,7 @@ const ProjectsPage = () => {
   ];
 
   return (
-    <div>
+    <div id='#projects'>
       <header>
         <h3 style={boldTitleStyle}>Featured Projects</h3>
         <p style={boldTitleStyle}>Some Projects I have worked on</p>
