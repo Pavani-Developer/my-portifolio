@@ -11,6 +11,8 @@ const boldTitleStyle = {
   margin: '10px',
   fontWeight: 'bold',
   textAlign: 'center',
+  fontSize:'24px',
+  color:'white',
 };
 
 const ProjectsPage = () => {
@@ -122,7 +124,7 @@ const ProjectsPage = () => {
           <Project key={index} {...project} />
         ))}
       </section>
-      <h2 style={{ textAlign:"center", fontWeight:'bold' }}>My Git Profile</h2>
+      <h2 style={{ textAlign:"center", fontWeight:'bold',color:'white' }}>My Git Profile</h2>
       <a href="https://github.com/Pavani-Developer" style={{ textAlign:"center",textDecoration:'none' }}><Git username='Pavani-Developer'/> </a>
     </div>
   );

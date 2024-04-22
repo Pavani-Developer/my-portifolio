@@ -1,0 +1,14 @@
+.App{
+    background-image: linear-gradient(to left, #6212a4,#3b056d);
+    width: 100%;
+    height: 100%;
+
+    
+}
+@media screen and (max-width:830px){
+    .App{
+        background-image: linear-gradient(to left, #16082B,#61056d);
+    }
+}
+    
+ 

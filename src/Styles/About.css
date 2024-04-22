@@ -28,7 +28,7 @@
   align-items: center;
   min-height: 100vh;
   padding: 20px;
-  color: #292828;
+  color: #f8f5f5;
   width: 50%;
   text-align: center;
   margin-left: 23%;
@@ -57,7 +57,19 @@ p.about-para{
 .skill-card:hover {
   transform: scale(1.15);
 }
-
+.topBlur{
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  min-width: 250px;
+  min-height: 350px;
+  top: 828px;
+  left: -10vw;
+  border-radius: 764px;
+  background: rgba(44, 3, 79, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
 @keyframes fadeInUp {
   from {
       opacity: 0;

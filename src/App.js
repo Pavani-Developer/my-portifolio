@@ -10,7 +10,7 @@ import GlobalStyles from './GlobalStyles';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <GlobalStyles/>
       <Navbar/>
       <Routes>

@@ -54,14 +54,15 @@ const Git = ({ username }) => {
 const styles = {
   container: {
     fontFamily: 'Arial, sans-serif',
-    backgroundColor: 'white',
+    backgroundColor: '#16082B',
     padding: '20px',
     borderRadius: '8px',
-    boxShadow: '0 0 10px rgba(160,32,240,1)',
+    boxShadow: '0 0 10px rgba(160,50,240,1)',
     maxWidth: '900px',
     width: '90%',
     margin: '50px auto',
     textAlign: 'center',
+    
   },
   avatar: {
     width: '150px',
@@ -74,15 +75,15 @@ const styles = {
   name: {
     margin: '0',
     fontSize: '24px',
-    color: '#333',
+    color: 'white',
   },
   username: {
     margin: '5px 0 10px',
-    color: '#666',
+    color: 'white',
   },
   bio: {
     margin: '0 0 20px',
-    color: '#444',
+    color: 'white',
   },
   stats: {
     display: 'flex',
@@ -95,11 +96,11 @@ const styles = {
     margin: '0',
     fontSize: '18px',
     fontWeight: 'bold',
-    color: '#333',
+    color: 'white',
   },
   statLabel: {
     margin: '0',
-    color: '#666',
+    color: 'white',
   },
 };
 

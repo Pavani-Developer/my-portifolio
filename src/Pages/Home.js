@@ -49,7 +49,7 @@ const Home = () => {
          
          
          <Projects/>
-         <h3 style={{ textAlign:"center", fontWeight:'bold' }}>Contact</h3>
+         <h3 style={{ textAlign:"center", fontWeight:'bold',color:'white',fontSize:'24px' }}>Contact</h3>
          <hr style={{ width: '80%', maxWidth: '1000px', margin: 'auto' }} /><br></br>
          <Contact/>
     </>

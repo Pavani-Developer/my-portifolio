@@ -31,6 +31,7 @@ const About = () => {
   return (
     <div className="about-container"  id='#about'>
       <div className='sub-aboutcontainer' >
+      <div className='topBlur'/>
         <h1>About Me</h1>
         <p className='about-para'>
           Hello! I'm Pavani, a passionate and creative Web-developer based in West Godavari. With a background in B.Sc Computer Science, I am dedicated to delivering high-quality solutions.
