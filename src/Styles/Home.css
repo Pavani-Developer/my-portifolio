@@ -113,6 +113,25 @@ p.name {
 .slogan {
   font-size: 2em;
 }
+/* In your Home.css file */
+.resume-button {
+  display: inline-block;
+  background-color: #ffbb00;
+  color: rgb(52, 29, 29);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.resume-button:hover {
+  background-color: #6500b3;
+  color: white;
+}
+
 
 @media (max-width: 768px) {
   .home-container {
@@ -201,10 +220,10 @@ p.home-about-para{
     
   }
 }
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
   .home-skills-container {
     
 
   }
-}
+} */
 

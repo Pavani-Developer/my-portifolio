@@ -4,21 +4,23 @@ import appleVideo from '../media/foodie.mp4';
 import bike from '../media/bike.mp4'; 
 import crm from '../media/crm.mp4';
 import DE from '../media/DE.mp4';
-import Git from './Git';
+import djangoecomers from '../media/djengo-ecomers.mp4';
+import reactcrud from '../media/Dashbords.mp4';
+import shateme from '../media/shareme.mp4';
 
+import Button from '@mui/material/Button';
+import CodeIcon from '@mui/icons-material/Code';
 
 const boldTitleStyle = {
   margin: '10px',
   fontWeight: 'bold',
   textAlign: 'center',
-  fontSize:'24px',
-  color:'white',
 };
 
 const ProjectsPage = () => {
   const isMobile = window.innerWidth <= 600;
 
-  const Project = ({ title, description, video, githubPath }) => {
+  const Project = ({ title, description, video, githubPath, live }) => {
     const projectCardStyle = {
       display: 'flex',
       flexDirection: 'column',
@@ -29,24 +31,22 @@ const ProjectsPage = () => {
       overflow: 'hidden',
       width: isMobile ? '85%' : 'calc(33.33% - 20px)',
       maxWidth: '500px',
-      height: '300px',
       backgroundColor: '#F5F5F5',
       cursor: 'pointer',
     };
 
     const projectVideoStyle = {
       width: '100%',
-      height: isMobile ? '80%' : '110%',
+      height: isMobile ? '50%' : '60%',
       objectFit: 'cover',
     };
 
     const mobileCardStyle = {
-      width: '85%',
-      maxWidth: 'none',
+      width: '100%',
     };
 
     const mobileVideoStyle = {
-      height: '99%',
+      height: '50%',
     };
 
     const mobileStyles = {
@@ -59,8 +59,17 @@ const ProjectsPage = () => {
     };
 
     const handleVideoClick = () => {
-      // Navigate to the respective GitHub path when the video is clicked
-      window.location.href = githubPath;
+      // Navigate to the respective live URL when the video is clicked
+      if (live) {
+        window.location.href = live;
+      }
+    };
+
+    const handleButtonClick = (event) => {
+      event.stopPropagation(); // Prevent triggering the video click
+      if (githubPath) {
+        window.location.href = githubPath;
+      }
     };
 
     return (
@@ -69,9 +78,22 @@ const ProjectsPage = () => {
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div style={{ padding: '10px', flex: 1 }}>
+        <div style={{ padding: '10px', flex: 1, display: 'flex', flexDirection: 'column' }}>
           <h5 style={{ fontWeight: 'bold' }}>{title}</h5>
-          <p style={{ fontSize: '14px' }}>{description}</p>
+          <p style={{ fontSize: '14px', flexGrow: 1 }}>{description}</p>
+          <Button 
+            onClick={handleButtonClick}
+            variant="contained"
+            color="primary"
+            startIcon={<CodeIcon />}
+            style={{
+              fontSize: '10px',
+              marginTop: '10px',
+              alignSelf: 'flex-end',
+            }}
+          >
+            Show Code
+          </Button>
         </div>
       </div>
     );
@@ -83,49 +105,70 @@ const ProjectsPage = () => {
       description: 'A food app that helps you find the best food in your area.',
       video: appleVideo,
       githubPath: 'https://github.com/USK0318/foodie', 
+      live: 'https://foodie-reactjs.netlify.app/',
     },
     {
       title: 'Bike website',
-      description: 'This is a bike showroom website.',
+      description: 'This is a bike showroom website with react js.',
       video: bike,
-      githubPath: 'https://github.com/Pavani-Developer/Project-1', 
+      githubPath: 'https://github.com/USK0318/BookBike', 
+      live: 'https://bookbike.netlify.app/',
     },
     {
       title: 'CRM system',
       description: 'CRM system for managing the customer data for an education instute.',
       video: crm,
       githubPath: 'https://github.com/Pavani-Developer/CRM-FRONTEND2/tree/master', 
+      live: 'https://crm-frontend2.netlify.app/',
     },
     {
-      title: 'Data Extrection',
-      description: 'We extrect data from PDFs in to Excal',
+      title: 'Data Extraction',
+      description: 'We extract data from PDFs into Excel',
       video: DE,
       githubPath: '', 
-    }
-    
+      live: '',
+    },
+    {
+      title: 'Django Ecommerce',
+      description: 'Ecommerce website using Django and MySQL.',
+      video: djangoecomers,
+      githubPath: 'https://github.com/USK0318/ecomers-Django', 
+      live: 'https://ecomers-djang.herokuapp.com/',
+    },
+    {
+      title: 'Basic CRUD operation using React Django',
+      description: "This is a basic CRUD operation using React and Django API's.",
+      video: reactcrud,
+      githubPath: 'https://github.com/USK0318/React-CRUD-Operations.git',
+      live: 'https://react-crud-operations.herokuapp.com/',
+    },
+    {
+      title: 'Send Anywhere Clone',
+      description: 'This is a clone of Send Anywhere app using Django',
+      video: shateme,
+      githubPath: 'https://github.com/USK0318/sendanywhere-Django.git', 
+      live: 'https://sendanywhere-django.herokuapp.com/',
+    },
   ];
 
   return (
-    <div id='#projects'>
+    <div>
       <header>
         <h3 style={boldTitleStyle}>Featured Projects</h3>
         <p style={boldTitleStyle}>Some Projects I have worked on</p>
-        <hr style={{ width: '90%', maxWidth: '1000px', margin: 'auto' }} />
+        <hr style={{ width: '90%', margin: 'auto' }} />
       </header>
       <section style={{ 
         display: 'flex', 
         justifyContent: 'space-around', 
         alignItems: 'flex-start', 
         flexWrap: 'wrap', 
-        maxWidth: '1300px', 
         margin: '40px auto' 
       }}>
         {projectsData.map((project, index) => (
           <Project key={index} {...project} />
         ))}
       </section>
-      <h2 style={{ textAlign:"center", fontWeight:'bold',color:'white' }}>My Git Profile</h2>
-      <a href="https://github.com/Pavani-Developer" style={{ textAlign:"center",textDecoration:'none' }}><Git username='Pavani-Developer'/> </a>
     </div>
   );
 }
