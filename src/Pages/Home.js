@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 
 
 const Home = () => {
-  const resumeUrl = 'https://drive.google.com/uc?export=download&id=1O3RWUQvEHVHlNI_J0VMDzG3Ek6NEv4wc'; // Replace YOUR_RESUME_FILE_ID with the actual ID of your file
+  const resumeUrl = 'https://drive.google.com/uc?export=download&id=1k_L79_96jA5u_FdWUxEnMDQZy36G1dm8'; 
 
   return (
     <>
