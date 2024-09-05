@@ -7,16 +7,16 @@ import Button from 'react-bootstrap/Button';
 
 
 const Home = () => {
-  const resumeUrl = 'https://drive.google.com/uc?export=download&id=1k_L79_96jA5u_FdWUxEnMDQZy36G1dm8'; 
+  const resumeUrl = 'https://drive.google.com/uc?export=download&id=1Yrwo27t3iXChzr062WzqTGRvxZ0gZZM7'; 
 
   return (
     <>
       <div className="home-container" id='#'>
-        {/* <img src={pavaniImage} alt="Pavani's Image" className="profile-image" /> */}
+        {/* <img src={pavaniImage} alt="Pavani's Image" className="profile-image" />https://drive.google.com/file/d/1Yrwo27t3iXChzr062WzqTGRvxZ0gZZM7/view?usp=drive_link */}
         <div className="text-container">
           <p className="name"> Hi There!👋<br/>I am Pavani </p>
           <p className="slogan">I'am a Full-Stack Developer</p>
-          <p className="coding-skills">Passionate about creating robust and efficient web applications. Proficient in languages such as JavaScript, React, and Node.js.</p>
+          <p className="coding-skills">I am a passionate and dedicated full-stack developer with a strong foundation in both front-end and back-end technologies. My goal is to create seamless, efficient, and innovative web solutions that meet the needs of clients and users alike.</p>
           <Button 
             variant="outline-success"
             className="resume-button" 
